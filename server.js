@@ -123,4 +123,5 @@ app.post('/api/generate-images', async (req, res) => {
     }
 });
 
-
+app.listen(port, () => {
+    console.log(`
