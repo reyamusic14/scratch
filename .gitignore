@@ -1,0 +1,11 @@
+# Sensitive files
+.env
+js/config.js
+
+# Example files are ok to commit
+!.env.example
+!js/config.example.js
+
+# Other common ignores
+node_modules/
+.DS_Store 
