@@ -124,4 +124,4 @@ app.post('/api/generate-images', async (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`
+    console.log(`Server running on port ${port}`);
