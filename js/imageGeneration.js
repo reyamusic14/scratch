@@ -5,14 +5,11 @@ class ImageGenerator {
         this.climateIssue = document.getElementById('climate-issue');
         this.resultsSection = document.querySelector('.results-section');
         
-        this.init();
+        // Add the event listener in constructor
+        this.generateBtn.addEventListener('click', () => this.generateImages());
         
         // Validate API keys on initialization
         this.validateAPIKeys();
-    }
-
-    init() {
-        this.generateBtn.addEventListener('click', () => this.generateImages());
     }
 
     validateAPIKeys() {
@@ -106,4 +103,5 @@ class ImageGenerator {
     }
 }
 
-new ImageGenerator(); 
+// Create instance immediately
+const imageGenerator = new ImageGenerator(); 
